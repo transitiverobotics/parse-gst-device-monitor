@@ -1,0 +1,2497 @@
+[
+  {
+    "name": [
+      "Webcam C310 Mono"
+    ],
+    "class": [
+      "Audio/Source"
+    ],
+    "caps": [
+      {
+        "type": "audio/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "choice",
+            "list": [
+              "S16LE",
+              "S16BE",
+              "F32LE",
+              "F32BE",
+              "S32LE",
+              "S32BE",
+              "S24LE",
+              "S24BE",
+              "S24_32LE",
+              "S24_32BE",
+              "U8"
+            ]
+          },
+          "layout": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "interleaved"
+          },
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-alaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-mulaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "alsa": {
+        "resolution_bits": "16",
+        "class": "generic",
+        "subclass": "generic-mix",
+        "name": "\"USB\\ Audio\"",
+        "id": "\"USB\\ Audio\"",
+        "subdevice": "0",
+        "subdevice_name": "\"subdevice\\ \\#0\"",
+        "device": "0",
+        "card": "1",
+        "card_name": "\"USB\\ Device\\ 0x46d:0x81b\"",
+        "long_card_name": "\"USB\\ Device\\ 0x46d:0x81b\\ at\\ usb-0000:0c:00.3-2\\,\\ high\\ speed\"",
+        "driver_name": "snd_usb_audio"
+      },
+      "device": {
+        "api": "alsa",
+        "class": "sound",
+        "bus_path": "pci-0000:0c:00.3-usb-0:2:1.2",
+        "bus": "usb",
+        "vendor": {
+          "id": "046d",
+          "name": "\"Logitech\\,\\ Inc.\""
+        },
+        "product": {
+          "id": "081b",
+          "name": "\"Webcam\\ C310\""
+        },
+        "serial": "046d_081b_EE146850",
+        "form_factor": "webcam",
+        "string": "hw:1",
+        "buffering": {
+          "buffer_size": "192000",
+          "fragment_size": "96000"
+        },
+        "access_mode": "mmap+timer",
+        "profile": {
+          "name": "mono-fallback",
+          "description": "Mono"
+        },
+        "description": "\"Webcam\\ C310\\ Mono\"",
+        "icon_name": "camera-web-usb"
+      },
+      "sysfs": {
+        "path": "/devices/pci0000:00/0000:00:08.1/0000:0c:00.3/usb5/5-2/5-2:1.2/sound/card1"
+      },
+      "udev": {
+        "id": "usb-046d_081b_EE146850-02"
+      },
+      "module-udev-detect": {
+        "discovered": "1"
+      },
+      "is-default": "false"
+    },
+    "type": "pulsesrc"
+  },
+  {
+    "name": [
+      "Monitor of G430 Surround Sound Gaming Headset Analog Stereo"
+    ],
+    "class": [
+      "Audio/Source"
+    ],
+    "caps": [
+      {
+        "type": "audio/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "choice",
+            "list": [
+              "S16LE",
+              "S16BE",
+              "F32LE",
+              "F32BE",
+              "S32LE",
+              "S32BE",
+              "S24LE",
+              "S24BE",
+              "S24_32LE",
+              "S24_32BE",
+              "U8"
+            ]
+          },
+          "layout": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "interleaved"
+          },
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-alaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-mulaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "device": {
+        "description": "\"Monitor\\ of\\ G430\\ Surround\\ Sound\\ Gaming\\ Headset\\ Analog\\ Stereo\"",
+        "class": "monitor",
+        "bus_path": "pci-0000:0c:00.3-usb-0:3:1.0",
+        "bus": "usb",
+        "vendor": {
+          "id": "046d",
+          "name": "\"Logitech\\,\\ Inc.\""
+        },
+        "product": {
+          "id": "0a4d",
+          "name": "\"G430\\ Surround\\ Sound\\ Gaming\\ Headset\""
+        },
+        "serial": "Logitech_Logitech_G430_Gaming_Headset",
+        "form_factor": "headset",
+        "string": "3",
+        "icon_name": "audio-headset-usb",
+        "intended_roles": "phone"
+      },
+      "alsa": {
+        "card": "3",
+        "card_name": "\"Logitech\\ G430\\ Gaming\\ Headset\"",
+        "long_card_name": "\"Logitech\\ Logitech\\ G430\\ Gaming\\ Headset\\ at\\ usb-0000:0c:00.3-3\\,\\ full\\ speed\"",
+        "driver_name": "snd_usb_audio"
+      },
+      "sysfs": {
+        "path": "/devices/pci0000:00/0000:00:08.1/0000:0c:00.3/usb5/5-3/5-3:1.0/sound/card3"
+      },
+      "udev": {
+        "id": "usb-Logitech_Logitech_G430_Gaming_Headset-00"
+      },
+      "module-udev-detect": {
+        "discovered": "1"
+      },
+      "is-default": "false"
+    },
+    "type": "pulsesrc"
+  },
+  {
+    "name": [
+      "G430 Surround Sound Gaming Headset Mono"
+    ],
+    "class": [
+      "Audio/Source"
+    ],
+    "caps": [
+      {
+        "type": "audio/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "choice",
+            "list": [
+              "S16LE",
+              "S16BE",
+              "F32LE",
+              "F32BE",
+              "S32LE",
+              "S32BE",
+              "S24LE",
+              "S24BE",
+              "S24_32LE",
+              "S24_32BE",
+              "U8"
+            ]
+          },
+          "layout": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "interleaved"
+          },
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-alaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-mulaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "alsa": {
+        "resolution_bits": "16",
+        "class": "generic",
+        "subclass": "generic-mix",
+        "name": "\"USB\\ Audio\"",
+        "id": "\"USB\\ Audio\"",
+        "subdevice": "0",
+        "subdevice_name": "\"subdevice\\ \\#0\"",
+        "device": "0",
+        "card": "3",
+        "card_name": "\"Logitech\\ G430\\ Gaming\\ Headset\"",
+        "long_card_name": "\"Logitech\\ Logitech\\ G430\\ Gaming\\ Headset\\ at\\ usb-0000:0c:00.3-3\\,\\ full\\ speed\"",
+        "driver_name": "snd_usb_audio"
+      },
+      "device": {
+        "api": "alsa",
+        "class": "sound",
+        "bus_path": "pci-0000:0c:00.3-usb-0:3:1.0",
+        "bus": "usb",
+        "vendor": {
+          "id": "046d",
+          "name": "\"Logitech\\,\\ Inc.\""
+        },
+        "product": {
+          "id": "0a4d",
+          "name": "\"G430\\ Surround\\ Sound\\ Gaming\\ Headset\""
+        },
+        "serial": "Logitech_Logitech_G430_Gaming_Headset",
+        "form_factor": "headset",
+        "string": "hw:3",
+        "buffering": {
+          "buffer_size": "176400",
+          "fragment_size": "88200"
+        },
+        "access_mode": "mmap+timer",
+        "profile": {
+          "name": "mono-fallback",
+          "description": "Mono"
+        },
+        "description": "\"G430\\ Surround\\ Sound\\ Gaming\\ Headset\\ Mono\"",
+        "icon_name": "audio-headset-usb",
+        "intended_roles": "phone"
+      },
+      "sysfs": {
+        "path": "/devices/pci0000:00/0000:00:08.1/0000:0c:00.3/usb5/5-3/5-3:1.0/sound/card3"
+      },
+      "udev": {
+        "id": "usb-Logitech_Logitech_G430_Gaming_Headset-00"
+      },
+      "module-udev-detect": {
+        "discovered": "1"
+      },
+      "is-default": "false"
+    },
+    "type": "pulsesrc"
+  },
+  {
+    "name": [
+      "FDUCE PRO AUDIO Analog Stereo"
+    ],
+    "class": [
+      "Audio/Source"
+    ],
+    "caps": [
+      {
+        "type": "audio/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "choice",
+            "list": [
+              "S16LE",
+              "S16BE",
+              "F32LE",
+              "F32BE",
+              "S32LE",
+              "S32BE",
+              "S24LE",
+              "S24BE",
+              "S24_32LE",
+              "S24_32BE",
+              "U8"
+            ]
+          },
+          "layout": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "interleaved"
+          },
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-alaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-mulaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "alsa": {
+        "resolution_bits": "16",
+        "class": "generic",
+        "subclass": "generic-mix",
+        "name": "\"USB\\ Audio\"",
+        "id": "\"USB\\ Audio\"",
+        "subdevice": "0",
+        "subdevice_name": "\"subdevice\\ \\#0\"",
+        "device": "0",
+        "card": "4",
+        "card_name": "\"FDUCE\\ PRO\\ AUDIO\"",
+        "long_card_name": "\"FDUCE\\ PRO\\ AUDIO\\ MADE\\ FDUCE\\ PRO\\ AUDIO\\ at\\ usb-0000:0c:00.3-4\\,\\ full\\ speed\"",
+        "driver_name": "snd_usb_audio"
+      },
+      "device": {
+        "api": "alsa",
+        "class": "sound",
+        "bus_path": "pci-0000:0c:00.3-usb-0:4:1.0",
+        "bus": "usb",
+        "vendor": {
+          "id": "8888",
+          "name": "\"FDUCE\\ PRO\\ AUDIO\\ MADE\\ \""
+        },
+        "product": {
+          "id": "1234",
+          "name": "\"FDUCE\\ PRO\\ AUDIO\""
+        },
+        "serial": "FDUCE_PRO_AUDIO_MADE_FDUCE_PRO_AUDIO_20180508",
+        "string": "front:4",
+        "buffering": {
+          "buffer_size": "352800",
+          "fragment_size": "176400"
+        },
+        "access_mode": "mmap+timer",
+        "profile": {
+          "name": "analog-stereo",
+          "description": "\"Analog\\ Stereo\""
+        },
+        "description": "\"FDUCE\\ PRO\\ AUDIO\\ Analog\\ Stereo\"",
+        "icon_name": "audio-card-usb"
+      },
+      "sysfs": {
+        "path": "/devices/pci0000:00/0000:00:08.1/0000:0c:00.3/usb5/5-4/5-4:1.0/sound/card4"
+      },
+      "udev": {
+        "id": "usb-FDUCE_PRO_AUDIO_MADE_FDUCE_PRO_AUDIO_20180508-00"
+      },
+      "module-udev-detect": {
+        "discovered": "1"
+      },
+      "is-default": "true"
+    },
+    "type": "pulsesrc"
+  },
+  {
+    "name": [
+      "Monitor of Starship/Matisse HD Audio Controller Analog Stereo"
+    ],
+    "class": [
+      "Audio/Source"
+    ],
+    "caps": [
+      {
+        "type": "audio/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "choice",
+            "list": [
+              "S16LE",
+              "S16BE",
+              "F32LE",
+              "F32BE",
+              "S32LE",
+              "S32BE",
+              "S24LE",
+              "S24BE",
+              "S24_32LE",
+              "S24_32BE",
+              "U8"
+            ]
+          },
+          "layout": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "interleaved"
+          },
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-alaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-mulaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "device": {
+        "description": "\"Monitor\\ of\\ Starship/Matisse\\ HD\\ Audio\\ Controller\\ Analog\\ Stereo\"",
+        "class": "monitor",
+        "bus_path": "pci-0000:0c:00.4",
+        "bus": "pci",
+        "vendor": {
+          "id": "1022",
+          "name": "\"Advanced\\ Micro\\ Devices\\,\\ Inc.\\ \\[AMD\\]\""
+        },
+        "product": {
+          "id": "1487",
+          "name": "\"Starship/Matisse\\ HD\\ Audio\\ Controller\""
+        },
+        "string": "2",
+        "icon_name": "audio-card-pci"
+      },
+      "alsa": {
+        "card": "2",
+        "card_name": "\"HD-Audio\\ Generic\"",
+        "long_card_name": "\"HD-Audio\\ Generic\\ at\\ 0xfcb00000\\ irq\\ 146\"",
+        "driver_name": "snd_hda_intel"
+      },
+      "sysfs": {
+        "path": "/devices/pci0000:00/0000:00:08.1/0000:0c:00.4/sound/card2"
+      },
+      "module-udev-detect": {
+        "discovered": "1"
+      },
+      "is-default": "false"
+    },
+    "type": "pulsesrc"
+  },
+  {
+    "name": [
+      "Monitor of GM206 High Definition Audio Controller Digital Stereo (HDMI 3)"
+    ],
+    "class": [
+      "Audio/Source"
+    ],
+    "caps": [
+      {
+        "type": "audio/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "choice",
+            "list": [
+              "S16LE",
+              "S16BE",
+              "F32LE",
+              "F32BE",
+              "S32LE",
+              "S32BE",
+              "S24LE",
+              "S24BE",
+              "S24_32LE",
+              "S24_32BE",
+              "U8"
+            ]
+          },
+          "layout": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "interleaved"
+          },
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-alaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-mulaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "device": {
+        "description": "\"Monitor\\ of\\ GM206\\ High\\ Definition\\ Audio\\ Controller\\ Digital\\ Stereo\\ \\(HDMI\\ 3\\)\"",
+        "class": "monitor",
+        "bus_path": "pci-0000:0a:00.1",
+        "bus": "pci",
+        "vendor": {
+          "id": "10de",
+          "name": "\"NVIDIA\\ Corporation\""
+        },
+        "product": {
+          "id": "0fba",
+          "name": "\"GM206\\ High\\ Definition\\ Audio\\ Controller\""
+        },
+        "string": "0",
+        "icon_name": "audio-card-pci"
+      },
+      "alsa": {
+        "card": "0",
+        "card_name": "\"HDA\\ NVidia\"",
+        "long_card_name": "\"HDA\\ NVidia\\ at\\ 0xfc080000\\ irq\\ 144\"",
+        "driver_name": "snd_hda_intel"
+      },
+      "sysfs": {
+        "path": "/devices/pci0000:00/0000:00:03.1/0000:0a:00.1/sound/card0"
+      },
+      "module-udev-detect": {
+        "discovered": "1"
+      },
+      "is-default": "false"
+    },
+    "type": "pulsesrc"
+  },
+  {
+    "name": [
+      "G430 Surround Sound Gaming Headset Analog Stereo"
+    ],
+    "class": [
+      "Audio/Sink"
+    ],
+    "caps": [
+      {
+        "type": "audio/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "choice",
+            "list": [
+              "S16LE",
+              "S16BE",
+              "F32LE",
+              "F32BE",
+              "S32LE",
+              "S32BE",
+              "S24LE",
+              "S24BE",
+              "S24_32LE",
+              "S24_32BE",
+              "U8"
+            ]
+          },
+          "layout": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "interleaved"
+          },
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-alaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-mulaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "alsa": {
+        "resolution_bits": "16",
+        "class": "generic",
+        "subclass": "generic-mix",
+        "name": "\"USB\\ Audio\"",
+        "id": "\"USB\\ Audio\"",
+        "subdevice": "0",
+        "subdevice_name": "\"subdevice\\ \\#0\"",
+        "device": "0",
+        "card": "3",
+        "card_name": "\"Logitech\\ G430\\ Gaming\\ Headset\"",
+        "long_card_name": "\"Logitech\\ Logitech\\ G430\\ Gaming\\ Headset\\ at\\ usb-0000:0c:00.3-3\\,\\ full\\ speed\"",
+        "driver_name": "snd_usb_audio"
+      },
+      "device": {
+        "api": "alsa",
+        "class": "sound",
+        "bus_path": "pci-0000:0c:00.3-usb-0:3:1.0",
+        "bus": "usb",
+        "vendor": {
+          "id": "046d",
+          "name": "\"Logitech\\,\\ Inc.\""
+        },
+        "product": {
+          "id": "0a4d",
+          "name": "\"G430\\ Surround\\ Sound\\ Gaming\\ Headset\""
+        },
+        "serial": "Logitech_Logitech_G430_Gaming_Headset",
+        "form_factor": "headset",
+        "string": "front:3",
+        "buffering": {
+          "buffer_size": "352800",
+          "fragment_size": "176400"
+        },
+        "access_mode": "mmap+timer",
+        "profile": {
+          "name": "analog-stereo",
+          "description": "\"Analog\\ Stereo\""
+        },
+        "description": "\"G430\\ Surround\\ Sound\\ Gaming\\ Headset\\ Analog\\ Stereo\"",
+        "icon_name": "audio-headset-usb",
+        "intended_roles": "phone"
+      },
+      "sysfs": {
+        "path": "/devices/pci0000:00/0000:00:08.1/0000:0c:00.3/usb5/5-3/5-3:1.0/sound/card3"
+      },
+      "udev": {
+        "id": "usb-Logitech_Logitech_G430_Gaming_Headset-00"
+      },
+      "module-udev-detect": {
+        "discovered": "1"
+      },
+      "is-default": "true"
+    },
+    "type": "..."
+  },
+  {
+    "name": [
+      "Starship/Matisse HD Audio Controller Analog Stereo"
+    ],
+    "class": [
+      "Audio/Sink"
+    ],
+    "caps": [
+      {
+        "type": "audio/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "choice",
+            "list": [
+              "S16LE",
+              "S16BE",
+              "F32LE",
+              "F32BE",
+              "S32LE",
+              "S32BE",
+              "S24LE",
+              "S24BE",
+              "S24_32LE",
+              "S24_32BE",
+              "U8"
+            ]
+          },
+          "layout": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "interleaved"
+          },
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-alaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-mulaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "alsa": {
+        "resolution_bits": "16",
+        "class": "generic",
+        "subclass": "generic-mix",
+        "name": "\"ALCS1200A\\ Analog\"",
+        "id": "\"ALCS1200A\\ Analog\"",
+        "subdevice": "0",
+        "subdevice_name": "\"subdevice\\ \\#0\"",
+        "device": "0",
+        "card": "2",
+        "card_name": "\"HD-Audio\\ Generic\"",
+        "long_card_name": "\"HD-Audio\\ Generic\\ at\\ 0xfcb00000\\ irq\\ 146\"",
+        "driver_name": "snd_hda_intel"
+      },
+      "device": {
+        "api": "alsa",
+        "class": "sound",
+        "bus_path": "pci-0000:0c:00.4",
+        "bus": "pci",
+        "vendor": {
+          "id": "1022",
+          "name": "\"Advanced\\ Micro\\ Devices\\,\\ Inc.\\ \\[AMD\\]\""
+        },
+        "product": {
+          "id": "1487",
+          "name": "\"Starship/Matisse\\ HD\\ Audio\\ Controller\""
+        },
+        "string": "front:2",
+        "buffering": {
+          "buffer_size": "352768",
+          "fragment_size": "176384"
+        },
+        "access_mode": "mmap+timer",
+        "profile": {
+          "name": "analog-stereo",
+          "description": "\"Analog\\ Stereo\""
+        },
+        "description": "\"Starship/Matisse\\ HD\\ Audio\\ Controller\\ Analog\\ Stereo\"",
+        "icon_name": "audio-card-pci"
+      },
+      "sysfs": {
+        "path": "/devices/pci0000:00/0000:00:08.1/0000:0c:00.4/sound/card2"
+      },
+      "module-udev-detect": {
+        "discovered": "1"
+      },
+      "is-default": "false"
+    },
+    "type": "..."
+  },
+  {
+    "name": [
+      "GM206 High Definition Audio Controller Digital Stereo (HDMI 3)"
+    ],
+    "class": [
+      "Audio/Sink"
+    ],
+    "caps": [
+      {
+        "type": "audio/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "choice",
+            "list": [
+              "S16LE",
+              "S16BE",
+              "F32LE",
+              "F32BE",
+              "S32LE",
+              "S32BE",
+              "S24LE",
+              "S24BE",
+              "S24_32LE",
+              "S24_32BE",
+              "U8"
+            ]
+          },
+          "layout": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "interleaved"
+          },
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-alaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      },
+      {
+        "type": "audio/x-mulaw",
+        "parameters": {
+          "rate": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "384000"
+          },
+          "channels": {
+            "valueType": "int",
+            "type": "range",
+            "min": "1",
+            "max": "32"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "alsa": {
+        "resolution_bits": "16",
+        "class": "generic",
+        "subclass": "generic-mix",
+        "name": "\"HDMI\\ 2\"",
+        "id": "\"HDMI\\ 2\"",
+        "subdevice": "0",
+        "subdevice_name": "\"subdevice\\ \\#0\"",
+        "device": "8",
+        "card": "0",
+        "card_name": "\"HDA\\ NVidia\"",
+        "long_card_name": "\"HDA\\ NVidia\\ at\\ 0xfc080000\\ irq\\ 144\"",
+        "driver_name": "snd_hda_intel"
+      },
+      "device": {
+        "api": "alsa",
+        "class": "sound",
+        "bus_path": "pci-0000:0a:00.1",
+        "bus": "pci",
+        "vendor": {
+          "id": "10de",
+          "name": "\"NVIDIA\\ Corporation\""
+        },
+        "product": {
+          "id": "0fba",
+          "name": "\"GM206\\ High\\ Definition\\ Audio\\ Controller\""
+        },
+        "string": "\"hdmi:0\\,2\"",
+        "buffering": {
+          "buffer_size": "352768",
+          "fragment_size": "176384"
+        },
+        "access_mode": "mmap+timer",
+        "profile": {
+          "name": "hdmi-stereo-extra2",
+          "description": "\"Digital\\ Stereo\\ \\(HDMI\\ 3\\)\""
+        },
+        "description": "\"GM206\\ High\\ Definition\\ Audio\\ Controller\\ Digital\\ Stereo\\ \\(HDMI\\ 3\\)\"",
+        "icon_name": "audio-card-pci"
+      },
+      "sysfs": {
+        "path": "/devices/pci0000:00/0000:00:03.1/0000:0a:00.1/sound/card0"
+      },
+      "module-udev-detect": {
+        "discovered": "1"
+      },
+      "is-default": "false"
+    },
+    "type": "..."
+  },
+  {
+    "name": [
+      "UVC Camera (046d:081b)"
+    ],
+    "class": [
+      "Video/Source"
+    ],
+    "caps": [
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "1280"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "960"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "15/2",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "1280"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "720"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "15/2",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "1184"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "656"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "960"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "720"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "1024"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "576"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "960"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "544"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "800"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "600"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "864"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "480"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "800"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "448"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "752"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "416"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "640"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "480"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "640"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "360"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "544"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "288"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "432"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "240"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "352"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "288"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "320"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "240"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "320"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "176"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "176"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "144"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "video/x-raw",
+        "parameters": {
+          "format": {
+            "valueType": "string",
+            "type": "atom",
+            "value": "YUY2"
+          },
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "160"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "120"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "1280"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "960"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "1280"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "720"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "1184"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "656"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "960"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "720"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "1024"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "576"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "960"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "544"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "800"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "600"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "864"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "480"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "800"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "448"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "752"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "416"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "640"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "480"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "640"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "360"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "544"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "288"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "432"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "240"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "352"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "288"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "320"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "240"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "320"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "176"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "176"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "144"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      },
+      {
+        "type": "image/jpeg",
+        "parameters": {
+          "width": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "160"
+          },
+          "height": {
+            "valueType": "int",
+            "type": "atom",
+            "value": "120"
+          },
+          "pixel-aspect-ratio": {
+            "valueType": "fraction",
+            "type": "atom",
+            "value": "1/1"
+          },
+          "framerate": {
+            "valueType": "fraction",
+            "type": "choice",
+            "list": [
+              "30/1",
+              "25/1",
+              "20/1",
+              "15/1",
+              "10/1",
+              "5/1"
+            ]
+          }
+        }
+      }
+    ],
+    "properties": {
+      "udev-probed": "true",
+      "device": {
+        "bus_path": "pci-0000:0c:00.3-usb-0:2:1.0",
+        "bus": "usb",
+        "subsystem": "video4linux",
+        "vendor": {
+          "id": "046d",
+          "name": "046d"
+        },
+        "product": {
+          "id": "081b",
+          "name": "\"UVC\\ Camera\\ \\(046d:081b\\)\""
+        },
+        "serial": "046d_081b_EE146850",
+        "capabilities": ":capture:",
+        "api": "v4l2",
+        "path": "/dev/video0"
+      },
+      "sysfs": {
+        "path": "/sys/devices/pci0000:00/0000:00:08.1/0000:0c:00.3/usb5/5-2/5-2:1.0/video4linux/video0"
+      },
+      "v4l2": {
+        "device": {
+          "driver": "uvcvideo",
+          "card": "\"UVC\\ Camera\\ \\(046d:081b\\)\"",
+          "bus_info": "usb-0000:0c:00.3-2",
+          "version": "331559 (0x00050f27)",
+          "capabilities": "2225078273 (0x84a00001)",
+          "device_caps": "69206017 (0x04200001)"
+        }
+      }
+    },
+    "type": "v4l2src"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "parse-gst-device-monitor",
+  "version": "0.1.0",
+  "description": "Parse the output from gst-device-monitor-1.0 and return as JSON object",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest *.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transitiverobotics/parse-gst-device-monitor.git"
+  },
+  "keywords": [
+    "gstreamer"
+  ],
+  "author": "Christian Fritz",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/transitiverobotics/parse-gst-device-monitor/issues"
+  },
+  "homepage": "https://github.com/transitiverobotics/parse-gst-device-monitor#readme",
+  "devDependencies": {
+    "jest": "^29.0.2"
+  }
+}
