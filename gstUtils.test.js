@@ -11,6 +11,7 @@ describe('gstUtils', () => {
 
   test('see output', () => {
     const devices = parseGstDeviceMonitorOutput(input);
+    fs.writeFileSync('/tmp/newOutput.json', JSON.stringify(devices));
     assert.deepStrictEqual(devices, correct);
   });
 });

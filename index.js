@@ -144,7 +144,7 @@ const parseCapParameters = (params) => {
 
   } else {
     // regular value
-    const valueMatch = groups.rest.match(/(?<value>[^,]*), (?<rest>.*)/)?.groups;
+    const valueMatch = groups.rest.match(/(?<value>[^, ;]*)(?<rest>.*)/)?.groups;
     if (!valueMatch) {
       console.warn('parse error: atom', groups.rest);
     } else {
