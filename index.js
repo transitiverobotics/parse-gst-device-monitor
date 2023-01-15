@@ -101,17 +101,22 @@ exports.parseGstDeviceMonitorOutput = (output) => {
  height=(int)960, \
  pixel-aspect-ratio=(fraction)1/1, \
  framerate=(fraction){ 15/2, 5/1 };
+
+ or (ubuntu22):
+ format=YUY2, \
+ width=640, \
+ height=480, \
+ framerate={ (fraction)30/1, (fraction)25/1 };
  */
 const parseCapParameters = (params) => {
   if (!params) return {};
 
   const groups = params
-    .match(/(?<name>[a-z\-]*)=\((?<type>[a-z]*)\)(?<rest>.*)/)?.groups;
+    .match(/(?<name>[a-z\-]*)=(\((?<type>[a-z]*)\))?(?<rest>.*)/)?.groups;
   if (!groups) return {};
 
-  const values = {
-    valueType: groups.type
-  };
+  const values = {};
+  groups.type && (values['valueType'] = groups.type);
   const rtv = {
     [groups.name]: values
   };
@@ -125,7 +130,8 @@ const parseCapParameters = (params) => {
       console.warn('parse error: choice', groups.rest);
     } else {
       values.type = 'choice';
-      values.list = valueMatch.list.split(', ').map(s => s.trim());
+      values.list = valueMatch.list.split(', ').map(s =>
+        s.trim().replace(/^\((?<type>[a-z]*)\)/,''));
       nextRest = valueMatch.rest;
     }
 
