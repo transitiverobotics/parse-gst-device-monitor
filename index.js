@@ -138,13 +138,16 @@ const parseCapParameters = (params) => {
   } else if (groups.rest[0] == '[') {
     // it's a range
     const valueMatch = groups.rest
-      .match(/\[ (?<min>\d*), (?<max>\d*) \](?<rest>.*)/)?.groups;
+      .match(/\[ (?<min>\d*)(\/(?<mindenom>\d*))?, (?<max>\d*)(\/(?<maxdenom>\d*))?(, (?<step>\d*))? \](?<rest>.*)/)?.groups;
     if (!valueMatch) {
       console.warn('parse error: range', groups.rest);
     } else {
       values.type = 'range';
       values.min = valueMatch.min;
+      valueMatch.mindenom && (values.mindenom = valueMatch.mindenom);
       values.max = valueMatch.max;
+      valueMatch.maxdenom && (values.maxdenom = valueMatch.maxdenom);
+      valueMatch.step && (values.step = valueMatch.step);
       nextRest = valueMatch.rest;
     }
 
